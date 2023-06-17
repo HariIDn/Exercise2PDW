@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <title>Formulir Registrasi</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-secondary,
+        a {
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Formulir Registrasi</legend>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama:</label>
+                    <input type="text" class="form-control" id="nama" name="nama">
+                </div>
+                <div class="mb-3">
+                    <label for="nis" class="form-label">NIS:</label>
+                    <input type="text" class="form-control" id="nis" name="nis">
+                </div>
+                <div class="mb-3">
+                    <label for="pass" class="form-label">Kode Registrasi:</label>
+                    <input type="password" class="form-control" id="pass" name="pass">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Jenis Kelamin:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jk" id="laki-laki" value="Laki-Laki" checked>
+                        <label class="form-check-label" for="laki-laki">Laki-Laki</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jk" id="perempuan" value="Perempuan">
+                        <label class="form-check-label" for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Jurusan yang Ingin Diambil:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="ti" id="ti">
+                        <label class="form-check-label" for="ti">Teknologi Informasi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="si" id="si">
+                        <label class="form-check-label" for="si">Sistem Informasi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="jr" id="jr">
+                        <label class="form-check-label" for="jr">Jaringan</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="kota" class="form-label">Kota Asal:</label>
+                    <select class="form-select" id="kota" name="kota">
+                        <option>Yogyakarta</option>
+                        <option>Surabaya</option>
+                        <option>Semarang</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="alasan" class="form-label">Apa Alasan Anda Masuk Ke Dalam Jurusan Tersebut?</label><br>
+                    <textarea class="form-control" id="alasan" name="alasan" cols="60" rows="10"
+                        placeholder="Silahkan Tulis Disini"></textarea>
+                </div>
+                <div class="button-container">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <button class="btn btn-secondary"><a href="index.html">Home</a></button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
